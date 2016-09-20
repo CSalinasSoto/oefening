@@ -1,10 +1,11 @@
 <?php
 //print_r($_POST);
 
+
 if($_POST['name'] == ""){
     echo "je moet wel je naam in komen te vullen <br>";
 }else{
-    echo "naam ".$_POST["name"]."<br>";
+    echo "naam ".ucfirst(strtolower($_POST["name"]))."<br>";
 }
 
 if($_POST['number'] == ""){
